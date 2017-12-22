@@ -1,0 +1,62 @@
+
+/* FUENTES */
+@font-face {
+    font-family: 'dusha';
+    src: url('../fonts/dusha.ttf');
+}
+
+@font-face {
+    font-family: 'argo';
+    src: url('../fonts/Argo.otf');
+}
+
+/*ESTILOS DE ELEMENTOS HTML */
+
+h1 {
+	font-family: 'dusha';
+	font-size: 35px;
+	font-weight: normal;
+	color: #0F467D;
+	text-transform: uppercase;
+}
+
+body {
+  background-image: url('../img/fondo.jpg');
+  background-attachment: fixed;
+}
+
+/*SECCIÓNSUPERIOR*/
+
+#seccionsuperior {
+  background-attachment: fixed;
+  background-image: url('../img/fondosuperior.jpg');
+  height: 900px;
+}
+.navbar-inverse {
+  	background-color: rgba(0,0,0,0);
+  	border-bottom: 3px solid #FDCE2C;
+    margin-top: 30px;
+  }
+.navbar-inverse .navbar-nav>li>a {
+  	font-family: 'argo';
+  	color: white;
+  }
+.navbar-brand {
+    float: left;
+    height: 62px;
+  }
+
+#sanbacilio {
+  width: 100%;
+  margin-top: -63px;
+}
+
+#video {
+   padding-top: 200px;
+}
+
+/*SECCIÓNPAQUETES*/
+
+#seccionpaquetes {
+  height: 800px;
+}
