@@ -16,7 +16,7 @@ html {
   font-size: 16px;
 }
 
-#video h1 {
+#portada h1 {
   font-size: 11rem;
   font-family: 'dusha';
   color: white;
@@ -26,14 +26,21 @@ html {
   text-align:center;
 }
 
-#video h1::first-line {
+#portada h1::first-line {
   font-size: 1.4rem;
-  line-height: 450%;
+  line-height: 8rem;
 }
 
-#video h1 span {
+#portada h1 span {
   font-size: 3.5rem;
   line-height: 80%;
+}
+
+#portada p {
+    color: white;
+    text-shadow: 2px 2px rgba(0,0,0,0.3);
+    font-size: 1.2rem;
+    padding-top: 5%
 }
 
 h2 {
@@ -47,6 +54,8 @@ h2 {
 body {
   background-image: url('../img/fondo.jpg');
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 p {
@@ -64,7 +73,8 @@ ul {
 #seccionsuperior {
   background-attachment: fixed;
   background-image: url('../img/fondosuperior.jpg');
-  height: 900px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .navbar-inverse {
   	background-color: rgba(0,0,0,0);
@@ -78,6 +88,10 @@ ul {
     padding: 0;
     height: 62px;
   }
+.bancodebogota {
+  height: 46px;
+  margin-top: 13px;
+}
 #logoheader {
   padding: 8px 12px;
 }
@@ -88,18 +102,34 @@ ul {
 
 
 #sanbacilio {
+  margin-top: -19%;
   width: 100%;
-  margin-top: -63px;
 }
 
-#video {
-   padding-top: 200px;
+#portada {
+   padding-top: 12%;
 }
 
 #nav ul li {
   margin: 6px 6px;
   font-size: 16px;
 }
+
+/*shrink*/
+
+#nav.shrink.navbar-inverse {
+    background-color: #0F467D;
+    transition: all ease .5s;
+    border-bottom: 3px solid #FDCE2C;
+}
+
+iframe {
+  height: 360px;
+  margin-left: 20%;
+}
+
+/*SECCIÓNPAQUETES*/
+
 
 #clientes .container {
   padding: 2%;
@@ -114,18 +144,9 @@ ul {
   background-color: #F9F7F4;
   font-size: 1.3em;
 }
-/*shrink*/
-
-#nav.shrink.navbar-inverse {
-    background-color: #0F467D;
-    transition: all ease .5s;
-    border-bottom: 3px solid #FDCE2C;
-}
-
-/*SECCIÓNPAQUETES*/
 
 #seccionpaquetes {
-  height: 800px;
+  padding-bottom: 5%;
 }
 
 #fondopaquetes {
@@ -156,6 +177,7 @@ ul {
 #banderin {
   width: 100%;
   filter: hue-rotate(-152deg) brightness(0.8);
+  margin-bottom: 8%;
 }
 
 #banderin:hover {
@@ -172,13 +194,13 @@ ul {
   border-radius: 5px;
   margin-bottom: 20px;
   padding: 10px;
-  height: 120px;
+  text-align: center;
+  height: 136px;
 }
 
 .icono {
   color: #FDCE2C;
-  margin-left: 45%;
-  margin-bottom: 10px;
+  margin: 7px;
 }
 
 /*SECCIONTOURES*/
@@ -201,7 +223,12 @@ ul {
   width: 800px;
 }
 
-carousel_packaques{
+.arrows_packaques {
+  padding: 10px;
+  text-align: center;
+}
+
+.carousel_packaques{
 	position: relative;
 	padding-top: 40px;
 	background-color: white;
@@ -271,17 +298,21 @@ carousel_packaques{
   	background-size: cover;
 	-webkit-box-shadow: 0 0 5px 0 #aaaaaa;
 	box-shadow: 0 0 5px 0 #aaaaaa;
-	opacity: 0.8;
-	filter: grayscale(100%);
-	-webkit-transition: all 500ms ease-in-out;
-	-moz-transition: all 500ms ease-in-out;
-	-ms-transition: all 500ms ease-in-out;
-	-o-transition: all 500ms ease-in-out;
-	transition: all 500ms ease-in-out;
 }
-.packagebox .imagepackage:hover{
-	opacity: 1;
-	filter: none;
+
+.packagebox .imagepackage img {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.packagebox .imagepackage:hover img{
+    transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+
 }
 .packagebox .imagepackage img{
 	width: 100%;
@@ -439,6 +470,7 @@ carousel_packaques{
   background-color: #0F467D;
   border-right: 3px solid #FDCE2C;
   border-left: 3px solid #FDCE2C;
+  padding-top: 2%;
 }
 
 
@@ -452,9 +484,100 @@ carousel_packaques{
 
 .informacion {
   margin: 1% auto;
+  padding: 1%;
 }
 
 .informacion p {
   color: white;
   font-size: 0.8rem;
+  text-align: center;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 740px) {
+  html {
+    font-size: 12px;
+  }
+
+  #portada {
+    padding-top: 40%;
+  }
+
+  #portada h1::first-line {
+    font-size: 1.2rem;
+    line-height: 4rem;
+  }
+
+  #portada h1 {
+    font-size: 7rem;
+    line-height: 4rem;
+  }
+
+  iframe {
+    width: 290px;
+    margin-left: 7%;
+    height: auto;
+  }
+
+  .informacion p {
+    font-size: 1.3rem;
+  }
+  .navbar-brand {
+      padding: 0;
+      height: 60px;
+    }
+  .bancodebogota {
+    height: 50px;
+    margin-top: -8px;
+  }
+  #sanbacilio {
+    margin-top: 10%;
+  }
+
+
+@media only screen and (min-width: 741px) and (max-width:991px) {
+  #sanbacilio {
+    margin-top: 0;
+  }
+
+  iframe {
+    margin-left: 4%;
+  }
+  .navbar-brand {
+      padding: 0;
+      height: 55px;
+    }
+  .bancodebogota {
+    height: 40px;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+
+  #portada h1::first-line {
+    font-size: 1.3rem;
+    line-height: 5rem;
+  }
+
+  #portada h1 {
+    font-size: 6rem;
+    line-height: 3.5rem;
+  }
+
+  #portada h1 span {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  iframe {
+    width: 500px;
+    margin-left: 17%;
+  }
+
+  #sanbacilio {
+    margin-top: 0;
+  }
 }
