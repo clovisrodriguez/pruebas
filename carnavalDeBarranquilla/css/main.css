@@ -1,0 +1,94 @@
+body {
+  margin:0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f1f1f1+0,ffffff+50,f1f1f1+100 */
+  background: #f1f1f1; /* Old browsers */
+  background: -moz-linear-gradient(left, #f1f1f1 0%, #ffffff 50%, #f1f1f1 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #f1f1f1 0%,#ffffff 50%,#f1f1f1 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #f1f1f1 0%,#ffffff 50%,#f1f1f1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#f1f1f1',GradientType=1 ); /* IE6-9 */
+}
+
+.container1 {
+  display: grid;
+  grid-template: repeat(10, 1fr) / repeat(10, 1fr);
+  position: relative;
+}
+
+.container1 .photo {
+  grid-area: 1 / 1 / 11 / 3;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+  z-index: 3;
+  overflow: hidden;
+  background-color: black;
+}
+
+.container1 .photo img {
+  opacity: 0.5;
+}
+
+.form1 {
+  grid-area: 1 / 2 / 6 / 5;
+  -webkit-clip-path: polygon(0 23%, 29% 0, 100% 0, 39% 100%);
+  clip-path: polygon(0 23%, 29% 0, 100% 0, 39% 100%);
+  background-color: #e0b509;
+  z-index: 0;
+}
+
+.form2 {
+  grid-area: 5 / 1 / 11 / 4;
+  background-color: #e0b509;
+  -webkit-clip-path: polygon(21% 28%, 82% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(21% 28%, 82% 0, 100% 100%, 0% 100%);
+  z-index: 2;
+}
+
+
+.form3 {
+  grid-area: 3 / 2 / 7 / 4;
+  -webkit-clip-path: polygon(21% 28%, 82% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(21% 28%, 82% 0, 100% 100%, 0% 100%);
+  background-color: #c14d00;
+  z-index: 1;
+}
+
+.form4 {
+  grid-area: 1 / 9 / 4 / 11;
+  -webkit-clip-path: polygon(11% 0, 100% 0, 100% 58%, 67% 100%);
+  clip-path: polygon(11% 0, 100% 0, 100% 58%, 67% 100%);
+  background-color: #9d1a00;
+  z-index:1;
+}
+
+.form5 {
+  grid-area: 9 / 10 / 11 / 11;
+  background-color: #e0b509;
+  -webkit-clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  z-index: 2;
+}
+
+
+.form6 {
+  grid-area: 2 / 9 / 6 / 11;
+  background-color: #e0b509;
+  -webkit-clip-path: polygon(18% 41%, 80% 5%, 100% 58%, 67% 100%);
+  clip-path: polygon(18% 41%, 80% 5%, 100% 58%, 67% 100%);
+  z-index: 0;
+}
+
+.titulo {
+  grid-area: 4 / 5 / 8 / 8;
+}
+
+.container2 {
+  display: grid;
+  grid-template: repeat(10, 1fr) / 350px repeat(8, 1fr);
+  grid-gap: 10px;
+  position: relative;
+  background-color: black;
+  -webkit-clip-path: polygon(0 0, 100% 6%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 6%, 100% 100%, 0% 100%);
+  z-index: 4;
+  margin-top: -2%;
+}
