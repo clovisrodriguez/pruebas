@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'luna';
+    src: url('../fonts/luna.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Regular.ttf');
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Raleway';
+}
+
 body {
   margin:0;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f1f1f1+0,ffffff+50,f1f1f1+100 */
@@ -6,6 +21,24 @@ body {
   background: -webkit-linear-gradient(left, #f1f1f1 0%,#ffffff 50%,#f1f1f1 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right, #f1f1f1 0%,#ffffff 50%,#f1f1f1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#f1f1f1',GradientType=1 ); /* IE6-9 */
+}
+
+h1 {
+  font-family: 'luna';
+  font-size: 5rem;
+  text-align: center;
+  line-height: 1rem;
+}
+
+h2 {
+  font-family: 'luna';
+  font-size: 2rem;
+  text-align: right;
+}
+
+#letras {
+  font-size: 7em;
+  line-height: 1.1em;
 }
 
 .container1 {
@@ -61,7 +94,7 @@ body {
 }
 
 .form5 {
-  grid-area: 9 / 10 / 11 / 11;
+  grid-area: 9 / 8/ 11 / 11;
   background-color: #e0b509;
   -webkit-clip-path: polygon(0 100%, 100% 0, 100% 100%);
   clip-path: polygon(0 100%, 100% 0, 100% 100%);
@@ -70,25 +103,114 @@ body {
 
 
 .form6 {
-  grid-area: 2 / 9 / 6 / 11;
+  grid-area: 2 / 9 / 10 / 11;
   background-color: #e0b509;
-  -webkit-clip-path: polygon(18% 41%, 80% 5%, 100% 58%, 67% 100%);
-  clip-path: polygon(18% 41%, 80% 5%, 100% 58%, 67% 100%);
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 43% 100%, 23% 17%);
+  clip-path: polygon(100% 0, 100% 100%, 43% 100%, 23% 17%);
   z-index: 0;
+}
+.form7 {
+  grid-area: 5 / 8 / 10 / 11;
+  background-color: #fbea12;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 43% 100%, 23% 17%);
+  clip-path: polygon(100% 0, 100% 100%, 43% 100%, 23% 17%);
+  z-index: 3;
+  opacity: 0.5;
+}
+.form8 {
+  grid-area: 1 / 2 / 5 / 5;
+  background-color: #fbea12;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 43% 100%, 23% 17%);
+  clip-path: polygon(100% 0, 100% 100%, 43% 100%, 23% 17%);
+  z-index: 3;
+  opacity: 0.5
+}
+
+.sombra {
+  grid-area: 9 / 1 / 11 / 11;
+  -webkit-clip-path: polygon(100% 100%, 0 100%, 0 34%);
+  clip-path: polygon(100% 100%, 0 100%, 0 34%);
+  background-color: black;
+  opacity: 0.4;
+  z-index: 4;
+}
+
+.sombra2 {
+  grid-area: 9 / 1 / 11 / 11;
+  -webkit-clip-path: polygon(100% 100%, 0 100%, 0 34%);
+  clip-path: polygon(100% 100%, 0 100%, 0 34%);
+  background-color: black;
+  opacity: 0.4;
+  z-index: 4;
 }
 
 .titulo {
-  grid-area: 4 / 5 / 8 / 8;
+  grid-area: 3 / 5 / 9 / 8;
 }
 
 .container2 {
   display: grid;
-  grid-template: repeat(10, 1fr) / 350px repeat(8, 1fr);
-  grid-gap: 10px;
+  grid-template: 100% / 18% 64% 18%;
   position: relative;
   background-color: black;
-  -webkit-clip-path: polygon(0 0, 100% 6%, 100% 100%, 0% 100%);
-  clip-path: polygon(0 0, 100% 6%, 100% 100%, 0% 100%);
-  z-index: 4;
-  margin-top: -2%;
+  -webkit-clip-path: polygon(0 0, 100% 16%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 16%, 100% 100%, 0% 100%);
+  z-index: 5;
+  margin-top: -6%;
+  background-image: url('../img/aguila.jpg');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 65%;
+}
+
+.contenedor-interno {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-gap: 12px;
+  display: grid;
+  grid-template: 1fr 4fr / repeat(12, 1fr);
+}
+
+.subtitulo {
+  grid-area: 2 / 1 / 3 / 6;
+  padding-top: 6%;
+}
+
+h3 {
+  font-family: 'luna';
+  font-size: 1.7rem;
+  color: white
+}
+
+.video {
+  grid-area: 3 / 1 / 4 / 7;
+  margin-bottom: 10%;
+}
+
+.texto {
+  grid-area: 3 / 7 / 4 / 13;
+  vertical-align: 100%;
+  padding-top: 8%;
+}
+
+.container2 p {
+  color: white;
+}
+
+.container3 {
+  background-color: #c14d00;
+  grid-template: 100% / 18% 64% 18%;
+  position: relative;
+  display: grid;
+  margin-top: 2%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 84%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 84%, 0% 100%);
+}
+
+.contenedor-interno {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-gap: 12px;
+  display: grid;
+  grid-template: 1fr 4fr / repeat(12, 1fr);
 }
