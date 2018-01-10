@@ -43,8 +43,11 @@ h2 {
   grid-column-gap: 6px;
 }
 
-.menu a {
+.menu a:nth-child(1) {
   grid-column-start: 2;
+}
+.menu a:nth-child(2) {
+  grid-column-start: 4;
 }
 .menu img {
   width: 14rem;
@@ -235,7 +238,7 @@ h3 {
 
 .container3 {
   background-color: #c14d00;
-  grid-template: 100% / 18% 64% 18%;
+  grid-template: 100% / 12% 76% 12%;
   position: relative;
   display: grid;
   margin-top: 2%;
