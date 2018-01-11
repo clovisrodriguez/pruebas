@@ -711,7 +711,7 @@ clip-path: polygon(0 0, 109% 0, 0 52%);
   .contenedor-interno2 {
       grid-column: 2 / 3;
       display: grid;
-      grid-template: 1fr 2fr 2fr / 1fr 260px 260px 260px 1fr;
+      grid-template: repeat(7,1fr) / 1fr 8fr 1fr;
       grid-column-gap: 12px;
       justify-items: center;
     }
@@ -721,12 +721,12 @@ clip-path: polygon(0 0, 109% 0, 0 52%);
         transform: scale(0.6);
       }
       .contenedor-interno2 img:nth-child(4) {
-        grid-area: 2 / 3 / 3 / 4;
+        grid-area: 2 / 4 / 3 / 5;
         transition: ease .5s;
         transform: scale(0.6);
       }
       .contenedor-interno2 img:nth-child(6) {
-        grid-area: 2 / 4 / 3 / 5;
+        grid-area: 2 / 6 / 3 / 7;
         transition: ease .5s;
         transform: scale(0.6);
       }

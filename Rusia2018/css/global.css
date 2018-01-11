@@ -199,6 +199,26 @@ iframe {
   height: 136px;
 }
 
+#especial {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fdce2c+0,efb413+100 */
+  background: #fdce2c; /* Old browsers */
+  background: -moz-linear-gradient(top, #fdce2c 0%, #efb413 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #fdce2c 0%,#efb413 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #fdce2c 0%,#efb413 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdce2c', endColorstr='#efb413',GradientType=0 ); /* IE6-9 */
+  box-shadow: 2px 2px 4px 0 rgba(50, 50, 50, .3);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+  height: 136px;
+  color: white;
+}
+
+#especial p {
+  color: white;
+}
+
 .icono {
   color: #FDCE2C;
   margin: 7px;
