@@ -651,6 +651,28 @@ clip-path: polygon(0 0, 109% 0, 0 52%);
     font-size: 14px;
   }
 
+  .hide {
+    visibility: hidden;
+  }
+
+  h1 {
+    font-family: 'luna';
+    font-size: 3rem;
+    text-align: center;
+    line-height: 1rem;
+  }
+
+  h2 {
+    font-family: 'luna';
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1rem;
+  }
+
+  #letras {
+    font-size: 4rem;
+  }
+
   .menu {
     background-color: black;
     position: fixed;
@@ -684,8 +706,18 @@ clip-path: polygon(0 0, 109% 0, 0 52%);
 
   .container2 {
     background-size: cover;
-    margin-top: -14%;
+      margin-top: -66%;
 }
+
+.menu {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    display: grid;
+    grid-template-columns:;
+    grid-column-gap:0;
+  }
 
   .contenedor-interno {
     grid-column-start: 2;
@@ -700,7 +732,7 @@ clip-path: polygon(0 0, 109% 0, 0 52%);
   justify-self: center;
 }
   .texto {
-  grid-area: 4 / 3 / 5 / 11;
+    grid-area: 4 / 2 / 5 / 13;
   }
 
   .contenedor-interno2 {
@@ -721,21 +753,31 @@ clip-path: polygon(0 0, 109% 0, 0 52%);
         transform: scale(0.6);
       }
       .contenedor-interno2 img:nth-child(4) {
-        grid-area: 2 / 4 / 3 / 5;
+        grid-area: 4 / 2 / 5 / 3;
         transition: ease .5s;
         transform: scale(0.6);
       }
       .contenedor-interno2 img:nth-child(6) {
-        grid-area: 2 / 6 / 3 / 7;
+        grid-area: 6 / 2 / 7 / 3;
         transition: ease .5s;
         transform: scale(0.6);
+      }
+
+      .informacion:nth-child(3) {
+          grid-area: 3 / 2 / 4 / 3;
+      }
+      .informacion:nth-child(5) {
+          grid-area: 5 / 2 / 6 / 3;
+      }
+      .informacion:nth-child(7) {
+          grid-area: 7 / 2 / 8 / 3;
       }
 
       .contenedor-interno2 img:hover {
          transform: scale(0.8);
       }
       .tituloSeccion {
-    grid-area: 1 / 4 / 2 / 4;
+    grid-area: 1 / 2 / 2 / 3;
     -webkit-clip-path: polygon(7% 16%, 100% 27%, 100% 78%, 0% 100%);
     clip-path: polygon(7% 16%, 100% 27%, 100% 78%, 0% 100%);
     background-color: #c14d00;
@@ -746,6 +788,9 @@ clip-path: polygon(0 0, 109% 0, 0 52%);
 
   .container3 {
     grid-template: 100% / 6% 88% 6%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
   }
 
   .subtitulo {
@@ -759,6 +804,8 @@ clip-path: polygon(0 0, 109% 0, 0 52%);
   }
 
   #informacion {
-    margin-top: -20%;
+    margin-top: -50%;
+    grid-area: 2/ 2 / 3 / 12;
+    z-index: 3;
   }
 }
