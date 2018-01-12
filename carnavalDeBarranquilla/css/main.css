@@ -446,6 +446,7 @@ clip-path: polygon(0 0, 109% 0, 0 52%);
     visibility: visible;
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s;
+    text-align: left;
 }
 
 @-webkit-keyframes fadeIn {
