@@ -49,6 +49,21 @@
         </div>
       </div>
     </div>
+    <div id="bancodebogota">
+      <div class="contenedor-banco popup" onclick="myFunction()">
+        <h3>Conoce nuestro beneficio por ser cliente del</h3>
+        <img src="img/bancodebogota.png" alt="" width="300px;">
+        <br />
+        <span class="popuptext" id="myPopup">
+          <p>Para el Banco de Bogota el beneficio exclusivo es el "Menú Quillero" para los 2 días de palco este incluye:</p>
+          <ul>
+            <li>1 Plato de carne asada o poll (250g) acampañada de yuca o bollo</li>
+            <li>2 Cervezas o Gaseosas</li>
+            <li>1 Chuzo con bollo.</li>
+          </ul>
+        </span>
+      </div>
+    </div>
     <div class="container3" id="Paquetes">
       <div class="contenedor-interno2">
           <div class="tituloSeccion">
@@ -84,6 +99,13 @@
         <h2>(+571) 390 44 22 - 21 || info@viajaengrande.com</h2>
       </div>
     </div>
+    <script>
+    // When the user clicks on div, open the popup
+    function myFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+    }
+    </script>
     <script src="js/jquery.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/parallax.js"></script>
