@@ -626,6 +626,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#15346b', end
   #sanbacilio {
     margin-top: 10%;
   }
+  
+  #vigilado {
+    display: none;
+  }
 
 
 @media only screen and (min-width: 741px) and (max-width:991px) {
@@ -643,6 +647,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#15346b', end
   .bancodebogota {
     height: 40px;
     margin-top: 10px;
+  }
+
+  #vigilado {
+    display: none;
   }
 }
 
